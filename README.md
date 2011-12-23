@@ -5,11 +5,16 @@ This plugin allows downloading files from http urls just like its [android
 counterpart](https://github.com/phonegap/phonegap-plugins/tree/master/Android/Downloader) does, with the same API. 
 
 - "Plugins/" contains objc source code of the plugin
+- "Downloader/" contains the project stuff created by PhoneGap project template for the sample project
+- "Downloader.xcodeproj" is the sample project you should be able to open in XCode
 - "www/" contains
     - coffeescript version of the plugin
     - javascript compiled version
     - an example of how it can be used
 
+
+Notes on ARC: 
+This plugin does not use the new iOS ARC facility. It's possible to convert it to ARC with the automatic XCode procedure. You will also have to change @property lines. Be careful to avoid Reference Cycles since DownloaderTasks retains NSURLConnection and NSURLConnection retains the DownloaderTask as it's delegate. One of the @property should be set to weak.
 
 Installing
 ==========
