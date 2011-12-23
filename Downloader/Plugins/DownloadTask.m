@@ -20,7 +20,7 @@
                  withProgress:(NSString *)_progress 
                    withFinish:(NSString *)finish {
     NSString* jsString = [NSString /* I hate how XCode indents.. can't fit in 80 cols */
-                          stringWithFormat:@"Downloader.handleCallback ('%@', '%@', '%@', %@);", 
+                          stringWithFormat:@"navigator.downloader.handleCallback ('%@', '%@', '%@', %@);", 
                           taskId, err, _progress, finish];
     
     [self.downloader writeJavascript:jsString];
@@ -63,8 +63,9 @@ didReceiveResponse: (NSHTTPURLResponse*) response
         [DownloadTask deleteFileWithPath:self.path];
         size = [response expectedContentLength];
         return;
-    } 
-    [self sendCallbackWithError:@"Error connecting" withProgress:@"false" withFinish:@"false"];
+    }
+    NSString *error = [NSString stringWithFormat:@"HTTP error %d", statusCode];
+    [self sendCallbackWithError:error withProgress:@"false" withFinish:@"false"];
 }
 
 

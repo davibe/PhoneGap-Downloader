@@ -67,7 +67,7 @@
                 timeout: 10
             }
 
-            Downloader.downloadFile ('https://github.com/callback/phonegap/zipball/111.3.0', params, err, win);
+            navigator.downloader.downloadFile ('https://github.com/callback/phonegap/zipball/111.3.0', params, err, win);
         }
         
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, onSuccess, console.log);

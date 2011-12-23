@@ -100,14 +100,18 @@
       if (progress === 'false') progress = false;
       if (finish === 'false') finish = false;
       task.callback(e, progress, finish);
-      if (e !== 'false') removeTask(task);
-      if (finish !== 'false') return removeTask(task);
+      if (e) removeTask(task);
+      if (finish) return removeTask(task);
     };
 
     return Downloader;
 
   })();
 
-  root.Downloader = new Downloader();
+  PhoneGap.addConstructor(function() {
+    var downloader;
+    downloader = new Downloader();
+    return navigator.downloader = downloader;
+  });
 
 }).call(this);

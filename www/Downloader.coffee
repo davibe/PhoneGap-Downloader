@@ -3,8 +3,8 @@ root = this
 unique = 0
 
 debug = () ->
-    return
-    console.log arguments
+  return
+  console.log arguments
 
 getId = () ->
   return unique++;
@@ -78,21 +78,24 @@ class Downloader
     # convert params to boolean, because phonegap sends strings
     
     if e == 'false'
-        e = false
+      e = false
         
     if progress == 'false'
-        progress = false
+      progress = false
         
     if finish == 'false'
-        finish = false
+      finish = false
     
     task.callback e, progress, finish
 
-    if e != 'false'
+    if e
       removeTask task
-    if finish != 'false'
+    if finish
       removeTask task
 
+PhoneGap.addConstructor () ->
+  downloader = new Downloader()
+  navigator.downloader = downloader
 
-root.Downloader = new Downloader()
+# root.Downloader = new Downloader()
 
