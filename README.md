@@ -39,4 +39,4 @@ General Usage
 
 Look at www/index.html for a very simple example.
 
-Note that you can also download multiple files at once.
+Note that you can also download multiple files at once. Also this plugin ALWAYS OVERWRITES if the target file already exists.
