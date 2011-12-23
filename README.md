@@ -1,8 +1,8 @@
 Phonegap SQLitePlugin
 =====================
 
-This plugin allows downloading files from http urls just like its android
-counterpart does, with the same API.
+This plugin allows downloading files from http urls just like its [android
+counterpart](https://github.com/phonegap/phonegap-plugins/tree/master/Android/Downloader) does, with the same API. 
 
 - "Plugins/" contains objc source code of the plugin
 - "www/" contains
