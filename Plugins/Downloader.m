@@ -3,7 +3,6 @@
  *
  * Authors:
  * Davide Bertola <dade@dadeb.it>
- * Joe Noon <joenoon@gmail.com>
  *
  * This library is available under the terms of the MIT License (2008). 
  * See http://opensource.org/licenses/alphabetical for full text.

@@ -1,3 +1,13 @@
+###
+ * Copyright (C) 2011 Davide Bertola
+ *
+ * Authors:
+ * Davide Bertola <dade@dadeb.it>
+ *
+ * This library is available under the terms of the MIT License (2008). 
+ * See http://opensource.org/licenses/alphabetical for full text.
+###
+
 root = this
 
 unique = 0
