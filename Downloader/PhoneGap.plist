@@ -44,6 +44,8 @@
 		<string>PGCapture</string>
 		<key>com.phonegap.splashscreen</key>
 		<string>PGSplashScreen</string>
+		<key>Downloader</key>
+		<string>Downloader</string>
 	</dict>
 </dict>
 </plist>

@@ -33,6 +33,9 @@
 		0DDEFB0414A393E70055DFA1 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DDEFB0314A393E70055DFA1 /* Capture.bundle */; };
 		0DDEFB0614A393E70055DFA1 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DDEFB0514A393E70055DFA1 /* PhoneGap.plist */; };
 		0DDEFB0A14A393E70055DFA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDEFB0914A393E70055DFA1 /* AppDelegate.m */; };
+		0DDEFB1414A3948B0055DFA1 /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDEFB1314A3948B0055DFA1 /* Downloader.m */; };
+		0DDEFB1614A398540055DFA1 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 0DDEFB1514A398540055DFA1 /* www */; };
+		0DDEFB1914A3B4C00055DFA1 /* DownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDEFB1814A3B4C00055DFA1 /* DownloadTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,10 +53,10 @@
 		0DDEFADD14A393E70055DFA1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0DDEFADF14A393E70055DFA1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		0DDEFAE114A393E70055DFA1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		0DDEFAE514A393E70055DFA1 /* Downloader-Info.plist */ = {isa = PBXFileReference; path = "Downloader-Info.plist"; sourceTree = "<group>"; };
+		0DDEFAE514A393E70055DFA1 /* Downloader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Downloader-Info.plist"; sourceTree = "<group>"; };
 		0DDEFAE714A393E70055DFA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0DDEFAE914A393E70055DFA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0DDEFAEB14A393E70055DFA1 /* Downloader-Prefix.pch */ = {isa = PBXFileReference; path = "Downloader-Prefix.pch"; sourceTree = "<group>"; };
+		0DDEFAEB14A393E70055DFA1 /* Downloader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Downloader-Prefix.pch"; sourceTree = "<group>"; };
 		0DDEFAEC14A393E70055DFA1 /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
 		0DDEFAF114A393E70055DFA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0DDEFAF514A393E70055DFA1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -64,9 +67,14 @@
 		0DDEFB0114A393E70055DFA1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
 		0DDEFB0314A393E70055DFA1 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		0DDEFB0514A393E70055DFA1 /* PhoneGap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PhoneGap.plist; sourceTree = "<group>"; };
-		0DDEFB0814A393E70055DFA1 /* AppDelegate.h */ = {isa = PBXFileReference; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		0DDEFB0814A393E70055DFA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		0DDEFB0914A393E70055DFA1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		0DDEFB0C14A393E70055DFA1 /* README */ = {isa = PBXFileReference; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		0DDEFB0C14A393E70055DFA1 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		0DDEFB1214A3948B0055DFA1 /* Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Downloader.h; path = Plugins/Downloader.h; sourceTree = "<group>"; };
+		0DDEFB1314A3948B0055DFA1 /* Downloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Downloader.m; path = Plugins/Downloader.m; sourceTree = "<group>"; };
+		0DDEFB1514A398540055DFA1 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		0DDEFB1714A3B4C00055DFA1 /* DownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadTask.h; path = Plugins/DownloadTask.h; sourceTree = "<group>"; };
+		0DDEFB1814A3B4C00055DFA1 /* DownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadTask.m; path = Plugins/DownloadTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,7 @@
 		0DDEFAB714A393E70055DFA1 = {
 			isa = PBXGroup;
 			children = (
+				0DDEFB1514A398540055DFA1 /* www */,
 				0DDEFAE314A393E70055DFA1 /* Downloader */,
 				0DDEFAC814A393E70055DFA1 /* Frameworks */,
 				0DDEFAC614A393E70055DFA1 /* Products */,
@@ -222,6 +231,10 @@
 			isa = PBXGroup;
 			children = (
 				0DDEFB0C14A393E70055DFA1 /* README */,
+				0DDEFB1214A3948B0055DFA1 /* Downloader.h */,
+				0DDEFB1314A3948B0055DFA1 /* Downloader.m */,
+				0DDEFB1714A3B4C00055DFA1 /* DownloadTask.h */,
+				0DDEFB1814A3B4C00055DFA1 /* DownloadTask.m */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -291,6 +304,7 @@
 				0DDEFB0214A393E70055DFA1 /* Default@2x.png in Resources */,
 				0DDEFB0414A393E70055DFA1 /* Capture.bundle in Resources */,
 				0DDEFB0614A393E70055DFA1 /* PhoneGap.plist in Resources */,
+				0DDEFB1614A398540055DFA1 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +333,8 @@
 			files = (
 				0DDEFAEA14A393E70055DFA1 /* main.m in Sources */,
 				0DDEFB0A14A393E70055DFA1 /* AppDelegate.m in Sources */,
+				0DDEFB1414A3948B0055DFA1 /* Downloader.m in Sources */,
+				0DDEFB1914A3B4C00055DFA1 /* DownloadTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +380,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -389,7 +405,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -455,6 +471,7 @@
 				0DDEFB1114A393E70055DFA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
