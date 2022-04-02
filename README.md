@@ -1,5 +1,5 @@
-Phonegap SQLitePlugin
-=====================
+Phonegap Downloader
+===================
 
 This plugin allows downloading files from http urls just like its [android
 counterpart](https://github.com/phonegap/phonegap-plugins/tree/master/Android/Downloader) does, with the same API. 
